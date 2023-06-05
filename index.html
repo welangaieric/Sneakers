@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css">
+ 
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/bootstrap.css.map">
+  <link rel="stylesheet" href="./css/bootstrap-icons/bootstrap-icons.css">
+  
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 20px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="preloader">
+    <img src="./images/1496.gif" alt="">
+  </div>
+  <header>
+    <div class="navbar">
+      <div class="left-elements">
+        <button class="toggleBtn" aria-controls="primary-navigation" aria-expanded="false" >
+          <svg class="hum"viewBox="0 0 100 100" width="50">
+            <rect class="line top" 
+              width="50" height="7"
+               x="10" y="30" ></rect>
+            <rect class="line middle" 
+              width="50" height="7"
+              x="10" y="45" ></rect>
+            <rect class="line bottom" 
+              width="50" height="7"
+              x="10" y="60" ></rect>
+          </svg>
+  
+
+        </button>
+        <div class="brand-namee">
+          <h1>sneakers</h1>
+
+        </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+    
+          </ul>
+         </div>
+      </div>
+      <div class="right-elements">
+        <div class="cart">
+          <img src="./images/icon-cart.svg" alt="cart image">
+          <div class="item-count">
+            <p class="count">0</p>
+          </div>
+        </div>
+        <div class="profile-photo">
+          <div class="avatar">
+            <img src="./images/image-avatar.png" alt="">
+          </div>
+        </div>
+      </div>
+   
+ 
+
+    </div>
+
+    <div class="offcanvasi canvas" aria-expanded="false">
+      <div class="offcanvas-linksi canvas">
+        <ul >
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+  
+        </ul>
+       </div>
+       <div class="blur-me">
+
+       </div>
+     </div>
+     
+  </header>
+  <div class="alerter">
+    <i class="bi bi-check" style="font-size: 24px;"></i> Added to cart Successfully
+  </div>
+  <div class="lightbox">
+    <div class="lightbox-container">
+      <div class="large-image">
+      <img src="./images/icon-close.svg" alt="" class="close-btn">
+      <div class="navigate previous">
+        <img src="./images/icon-previous.svg" alt="" class=" ">
+
+      </div>
+        <img id="large" src="./images/image-product-1.jpg" alt="">
+        <div class="navigate next">
+          <img src="./images/icon-next.svg" alt="" class=" ">
+  
+        </div>
+      </div>
+      <div class="thumbnails">
+        <img src="./images/image-product-1.jpg" id="small" alt="" onclick="viewImage(this)">
+        <img src="./images/image-product-2.jpg" id="small" alt="" onclick="viewImage(this)">
+        <img src="./images/image-product-3.jpg" id="small" alt="" onclick="viewImage(this)">
+        <img src="./images/image-product-4.jpg" id="small" alt="" onclick="viewImage(this)">
+      
+      </div>
+    </div>
+   
+  </div>
+
+ 
+  
+  <div class="container main">
+    <div class="container-view">
+      <div class="large-image">
+          <img id="large" class="lightbox-open" src="./images/image-product-1.jpg" alt="">
+      </div>
+      <div class="thumbnails">
+          <img src="./images/image-product-1.jpg" id="small" alt="" onclick="viewImage(this)">
+          <img src="./images/image-product-2.jpg" id="small" alt="" onclick="viewImage(this)">
+          <img src="./images/image-product-3.jpg" id="small" alt="" onclick="viewImage(this)">
+          <img src="./images/image-product-4.jpg" id="small" alt="" onclick="viewImage(this)">
+  
+      </div>
+  </div>
+  <!-- carousel  -->
+    <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+      <div class="carousel-inner" >
+        <div class="carousel-item active">
+          <img src="./images/image-product-1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/image-product-2.jpg" class="d-block w-100 img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/image-product-3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"><img src="./images/icon-previous.svg" alt=""></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon"  aria-hidden="true"><img src="./images/icon-next.svg" alt=""></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- check out  -->
+    <div class="checkout-module model" >
+      <div class="model-header">
+        <div class="model-title">
+          <h5>Cart</h5> 
+        </div>
+        </div>
+        <div class="model-body">
+          <div class="message">
+            <h6>Your cart is empty.</h6> 
+          </div>
+        </div>      
+    </div>
+<!-- description  -->
+
+<div class="container overide">
+  <div class="description">
+    <h3>SNEAKER COMPANY</h3>
+    <h2>Fall Limited Edition <br> Sneakers</h2>
+    <p>  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.</p>   
+  </div>
+  <div class="payment-details">
+    <div class="pricing">
+      <div class="price">
+        <h2>$125.00</h2>
+        <p>50%</p>
+      </div>
+      <div class="discount">
+        <h5>$250.00</h5>
+      </div>      
+    </div>  
+  </div>
+  <!-- add or reduce quantity  -->
+  <div class="views">
+    <div class="quantity">
+      <span class="add orange" id="minus"><img src="./images/icon-minus.svg" alt=""></span>
+      <span class="add" id="display-counter">0</span>
+      <span class="add orange" id="plus"><img src="./images/icon-plus.svg" alt=""></span>
+    </div>
+    <button  class="submit-btn" >
+      <!-- <img class="cart-white" src="./images/icon-cart.svg" alt=""> -->
+      <i class="bi bi-cart" style="font-size: 24px; color: #fff;"></i><span class="add-to-cart">Add to cart</span>
+    </button> 
+  </div>
+ 
+</div>
+
+
+</div>
+
+
+<!-- attribution  -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Welangai Eric</a>.
+  </div>
+
+  <!-- scripts  -->
+  <script  >
+    function viewImage(small){
+     var fullImage = document.querySelector('#large')
+     fullImage.src = small.src;
+    }
+</script>
+  <script src="./js/custom.js"></script>
+  <script src="./js/bootstrap.bundle.js"></script>
+  <script src="./js/bootstrap.bundle.js.map"></script>
+</body>
+</html>
