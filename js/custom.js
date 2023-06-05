@@ -44,14 +44,25 @@ subBtn.addEventListener('click',()=>{
 
 let cartBtn = document.querySelector('.cart')
 let model = document.querySelector('.model')
+let clickout = document.querySelector('.click-out')
 cartBtn.addEventListener('click',()=>{
     if(model.classList.contains('show')){
         model.classList.remove('show')
         model.classList.add('hidden')
+        clickout.classList.remove('show')
+        clickout.classList.add('hidden')
     }
     else{
         model.classList.add('show')
         model.classList.remove('hidden')
+        clickout.classList.add('show')
+        clickout.classList.remove('hidden')
+        clickout.addEventListener('click',()=>{
+            model.classList.remove('show')
+            model.classList.add('hidden')
+            clickout.classList.remove('show')
+            clickout.classList.add('hidden')
+        })
 
 
     }
@@ -142,7 +153,11 @@ window.addEventListener('DOMContentLoaded',()=>{
     
     },1000)
 })
-;
+document.getElementsByTagName('body').addEventListener('click',()=>{
+   
+    console.log('wesadfqeefw')
+    model.classList.toggle('hidden')
+})
 
 
 

@@ -91,9 +91,7 @@ header{
     padding: 0 5px;
 
 }
-.navbar-links li:hover{
-     
-}
+
 .navbar-links a{
     text-decoration: none;
     color: var(--dark-greyish-blue);
@@ -321,9 +319,18 @@ header{
     border-radius: 10px;
     background-color: var(--white);
     visibility: hidden;
-    box-shadow:10px 10px ar(--light-greyish-blue) ;
+    box-shadow:6px 6px 6px #555 ;
 
     
+}
+.click-out{
+    width: 90vw;
+    height: 100vh;
+    /* border: red solid 1px; */
+    position: absolute;
+    z-index: 19;
+    /* display: none; */
+    /* background-color: blue; */
 }
 .show{
     visibility: visible;
