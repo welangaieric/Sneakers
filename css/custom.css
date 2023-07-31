@@ -210,7 +210,7 @@ body{
 }
 .prod-card{
     width:8rem;
-    height:320px ;
+    height:300px ;
     opacity: 0;
     
     transform: translateX(-200px);
