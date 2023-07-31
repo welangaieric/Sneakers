@@ -1,0 +1,452 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+    --orange: hsl(26, 100%, 55%);
+    --pale-orange:hsl(25, 87%, 73%);
+    --very-dark-blue: hsl(220, 13%, 13%);
+    --dark-greyish-blue:hsl(219, 9%, 45%);
+    --greyish-blue:hsl(220, 14%, 75%);
+    --light-greyish-blue:hsl(223, 64%, 98%);
+    --black: hsl(0, 0%, 0%);
+
+
+
+}
+a{
+    text-decoration: none !important;
+    color: var(--black) !important;
+
+}
+html{
+
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#F2F2F2 !important;
+    /* background-image: url('/images/rednike.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; */
+    overflow-x: hidden;
+    
+    /* min-height: 100vh; */
+}
+
+ header{
+    position: fixed;
+    top: 0;
+    z-index: 60;
+    background-color:#F2F2F2 !important;
+
+
+ }
+
+.hg{
+    box-shadow: 2px 2px 6px var(--dark-greyish-blue);
+}
+.bg-grey{
+    background-color:#F2F2F2 !important;
+
+}
+.wrapper{
+    width: 100%;
+    /* min-height: 100vh; */
+    position: relative;
+    /* top: 0; */
+
+    /* z-index: 20; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/Group\ 1.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    /* border: red solid; */
+
+
+}
+.tag-line{
+    /* position:absolute; */
+    margin-top: 50px;
+    margin-left: -20%;
+    width:229px ;
+    height:170px ;
+    /* border: red solid; */
+    display: flex;
+    flex-direction: column;
+}
+.tag-line h3{
+    color: #9E9E9E !important;
+    font-weight: 100 !important;
+    font-size: 24px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    /* border: rgb(55, 255, 0) solid; */
+    
+
+
+}
+.tag-line p{
+    font-weight: 100 !important;
+    padding:10px 0 !important;
+    margin: 0 !important;
+    /* border: rgb(0, 51, 255) solid; */
+
+
+}
+.sneaker-logo{
+    width: 50% !important;
+    /* height:60% ; */
+    /* border: rgb(255, 213, 0) solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.sneaker-logo img{
+    width: 100%;
+    height: 100%;
+    margin-top: -40px;
+    object-fit: cover;
+
+}
+.hero-image{
+    width: 100%;
+    height: 300px;
+    /* border: red solid; */
+    /* position: relative; */
+    overflow: hidden;
+}
+.nike-image{
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+
+}
+.nike-image img{
+    margin-top: -40px;
+    width: 170%;
+    object-fit: cover;
+}
+.subscribe{
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: red solid; */
+
+}
+.subscribe form{
+    width: 80%;
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-input{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: rgb(0, 255, 208) solid; */
+    background-color:var(--white);
+    align-items: center;
+    border-radius: 10px;
+}
+.form-input-text{
+    width: 70%;
+    height: 100%;
+    outline:none;
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 10px;
+
+}
+.sub-btn{
+    width: 30%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color:var(--orange) !important;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+
+}
+.products{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #FBFBFB;
+    /* margin-top: -100px !important; */
+    border-radius: 8;
+    
+    /* gap: 20px; */
+
+}
+
+.prod-wrapper{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow-x: hidden; */
+    
+    
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.products h2{
+    padding: 20px;
+}
+.prod-card{
+    width:10rem;
+    height:300px ;
+    opacity: 0;
+    
+    transform: translateX(-200px);
+    transform: rotate(-45deg);
+    transition: 1s ease-in;
+    /* display: none; */
+    background-color:var(--white);
+    border-radius: 8px;
+    /* margin-bottom: 50px; */
+    box-shadow: 2px 2px 6px var(--dark-greyish-blue);
+
+
+}
+.prod-card.showw{
+    /* display: initial; */
+    transform: translateX(0);
+    transform: rotate(0deg);
+    opacity: 1;
+}
+
+.prod-card-header{
+    width: 100%;
+    height: 60%;
+    border-radius: 8px;
+
+    /* border: red solid; */
+}
+.prod-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+
+
+
+}
+.prod-image img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 8px ;
+    border-top-right-radius: 8px ;
+
+
+
+}
+.prod-card-body{
+    width: 100%;
+    height: 40%;
+    /* border-top: var(--orange) solid; */
+
+
+}
+.prod-card-body h4 , p{
+    padding: 0;
+    margin: 0;
+}
+.prod-card-body h4{
+ padding: 2px;
+ font-size: 1em;
+ color:var(--orange) !important;
+}
+.prod-card-body p{
+    font-size: 12px;
+    padding: 4px;
+    margin-bottom: 0;
+
+}
+.pricing-rating{
+    width: 100%;
+    /* height: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+
+}
+.curr-price{
+    /* border: red solid; */
+
+    width:33%;
+    color:var(--orange);
+    
+}
+.curr-price h5,p{
+    padding: 0;
+    margin: 0;
+}
+.curr-price,.pricing-rating p{
+    font-size: 10px;
+    
+}
+.curr-price h5{
+    color: var(--orange);
+    padding: 2px;
+    font-size: .8em;
+}
+.old-price{
+    width: 30%;
+    color: #9E9E9E;
+
+}
+.old-price h5{
+    padding: 2px;
+    font-size: .8em;
+    margin: 0;
+    /* font-size: 12px; */
+    text-decoration: line-through;
+    color: var(--greyish-blue);
+}
+.rating{
+    /* border: red solid; */
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 1px;
+}
+.rating-star{
+    /* width: 6%; */
+    object-fit: cover;
+}
+.rating-star img{
+    width: 100%;
+}
+.footerr{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--dark-greyish-blue) ;
+}
+.contact-info{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-align: left;
+    
+    margin-bottom:20px;
+    color: var(--white);
+}
+.cont-row{
+    width: 40%;
+}
+.contact-info p{
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    text-align: left;
+}
+.preloaderr{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    position: absolute;
+    background-color: var(--white);
+    /* border: red solid; */
+    top: 0;
+
+    
+}
+.preloaderr img{
+    width: 50px;
+    height: 50px;
+}
+.contents{
+    display: none;
+}
+.hero{
+    display:none;
+    
+}
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 25px;
+    bottom: 15px;
+    z-index: 996;
+    background: var(--orange);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .back-to-top:hover {
+    background: var(--light-greyish-blue);
+  }
+  
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .back-to-top i:hover{
+    color: var(--orange);
+
+  }
+.reverse{
+    display: flex !important;
+    flex-direction: column-reverse !important;
+   }
+
+@media screen and (min-width:768px) {
+
+    .wrapper{
+        background-image: url('/images/Group\ 1.png');
+        background-size: 100%;
+    }
+    .tag-line{
+        border: red solid;
+    }
+    .reverse{
+        display: flex !important;
+        flex-direction: row !important;
+       }
+    .prod-wrapper{
+        justify-content: flex-start;
+    }
+    .prod-card{
+        width: 18rem;
+        height: 30rem;
+    }
+    .prod-card-header{
+        height: 350px;
+    }
+    
+}

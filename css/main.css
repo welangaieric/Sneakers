@@ -22,20 +22,21 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif; 
-    display: flex;
-    flex-direction: column;
-    background-color:var(--white);
-    justify-content: center;
-    align-items: center;
+    /* display: flex;
+    flex-direction: column; */
+    /* background-color:var(--light-greyish-blue) !important; */
+    /* justify-content: center;
+    align-items: center; */
     position: relative;
 }
 header{
     width: 100vw;
-    height: 80px;
+    height: 60px;
     /* border: 2px solid red; */
     position: relative;
     display: flex;
-    
+    background-color: transpaent !important;
+    /* border: red solid ; */
     justify-content: center;
     align-items: center;
 
@@ -46,7 +47,7 @@ header{
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 100;
+    z-index: 200;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,6 +55,7 @@ header{
 }
 .main{
     display: none;
+    
     
 }
 .views{
@@ -73,6 +75,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent !important;
+
 
 }
 .navbar-links{
@@ -318,7 +322,7 @@ header{
     top: 10px;
     border-radius: 10px;
     background-color: var(--white);
-    visibility: hidden;
+    display: none;
     box-shadow:6px 6px 6px #555 ;
 
     
@@ -329,15 +333,13 @@ header{
     /* border: red solid 1px; */
     position: absolute;
     z-index: 19;
-    /* display: none; */
+    display: none;
     /* background-color: blue; */
 }
 .show{
-    visibility: visible;
+    display: initial;
 }
-.hidden{
-    visibility: hidden;
-}
+
 
 .model-header{
     width: 100%;

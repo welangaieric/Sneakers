@@ -1,5 +1,8 @@
-toggleBtn=document.querySelector('.toggleBtn')
+
+    toggleBtn=document.querySelector('.toggleBtn')
 const offCanvas = document.querySelector('.offcanvasi')
+
+
 
 toggleBtn.addEventListener('click', () => {
     const isOpen = toggleBtn.getAttribute('aria-expanded');
@@ -46,27 +49,14 @@ let cartBtn = document.querySelector('.cart')
 let model = document.querySelector('.model')
 let clickout = document.querySelector('.click-out')
 cartBtn.addEventListener('click',()=>{
-    if(model.classList.contains('show')){
-        model.classList.remove('show')
-        model.classList.add('hidden')
-        clickout.classList.remove('show')
-        clickout.classList.add('hidden')
-    }
-    else{
-        model.classList.add('show')
-        model.classList.remove('hidden')
-        clickout.classList.add('show')
-        clickout.classList.remove('hidden')
-        clickout.addEventListener('click',()=>{
-            model.classList.remove('show')
-            model.classList.add('hidden')
-            clickout.classList.remove('show')
-            clickout.classList.add('hidden')
+    model.classList.toggle('show')
+    clickout.classList.toggle('show')
+})
+clickout.addEventListener('click',()=>{
+    model.classList.toggle('show')
+    clickout.classList.toggle('show')
         })
 
-
-    }
-})
 
 //Add to cart 
 let addcartBtn = document.querySelector('.submit-btn')
@@ -144,20 +134,8 @@ lightboxclose.addEventListener('click',()=>{
     
 })
 // preloader
-let preloader = document.querySelector('.preloader')
-window.addEventListener('DOMContentLoaded',()=>{
-    setTimeout(() => {
-        preloader.style.display = 'none'
-        document.querySelector('.main').style.display = 'flex'
-    
-    
-    },1000)
-})
-document.getElementsByTagName('body').addEventListener('click',()=>{
-   
-    console.log('wesadfqeefw')
-    model.classList.toggle('hidden')
-})
+
+
 
 
 
