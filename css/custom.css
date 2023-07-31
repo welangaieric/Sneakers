@@ -268,13 +268,11 @@ body{
     margin: 0;
 }
 .prod-card-body h4{
- padding: 2px;
  font-size: .8rem;
  color:var(--orange) !important;
 }
 .prod-card-body p{
     font-size: 12px;
-    padding: 4px;
     margin-bottom: 0;
 
 }
@@ -304,7 +302,6 @@ body{
 }
 .curr-price h5{
     color: var(--orange);
-    padding: 2px;
     font-size: .8em;
 }
 .old-price{
@@ -313,7 +310,6 @@ body{
 
 }
 .old-price h5{
-    padding: 2px;
     font-size: .8em;
     margin: 0;
     /* font-size: 12px; */
