@@ -1,4 +1,12 @@
 
+
+// preloader
+$('document').ready(()=>{
+    setTimeout(()=>{
+        $('.preloader').css('display','none')
+    },10000)
+})
+
     toggleBtn=document.querySelector('.toggleBtn')
 const offCanvas = document.querySelector('.offcanvasi')
 

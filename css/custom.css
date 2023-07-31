@@ -176,7 +176,7 @@ body{
     border: none;
     background-color:var(--orange) !important;
     color: white;
-    font-size: 1rem;
+    font-size: .8rem;
     border-radius: 10px;
 
 }
@@ -210,7 +210,7 @@ body{
 }
 .prod-card{
     width:8rem;
-    height:300px ;
+    height:320px ;
     opacity: 0;
     
     transform: translateX(-200px);
@@ -269,7 +269,7 @@ body{
 }
 .prod-card-body h4{
  padding: 2px;
- font-size: 1em;
+ font-size: .8rem;
  color:var(--orange) !important;
 }
 .prod-card-body p{
@@ -363,24 +363,7 @@ body{
     padding: 5px;
     text-align: left;
 }
-.preloaderr{
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    position: absolute;
-    background-color: var(--white);
-    /* border: red solid; */
-    top: 0;
 
-    
-}
-.preloaderr img{
-    width: 50px;
-    height: 50px;
-}
 .contents{
     display: none;
 }
@@ -448,5 +431,13 @@ body{
     .prod-card-header{
         height: 350px;
     }
-    
+    .prod-card-body h4{
+        font-size: 1.4rem;
+    }
+    .old-price h5,.curr-price h5{
+        font-size: 14px;
+    }
+    .old-price p,.curr-price p{
+        font-size: 12px;
+    }
 }
